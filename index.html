@@ -17,12 +17,21 @@
 
         <fieldset>
             <form id="myForm" action="" onsubmit="return false ">
-                <h3>Bitte zutreffendes angeben</h3><select class="form-select" id="basis_c" onchange="basis()">
+                <p>Jahr</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>2022</option>
+                    <option value="1">2021</option>
+                    <option value="2">2020</option>
+                    <option value="3">2019</option>
+                </select>
+                <br>
+                <p>Berechnung nach Grundtarif oder Ehegatten-/Lebenspartnersplitting</p><select class="form-select"
+                    id="basis_c" onchange="basis()">
                     <option selected>Berechnungsgrundlage wählen</option>
                     <option value="1">Grundtarif</option>
                     <option value="2">Splitting</option>
-                </select>
-                <p>Bitte geben Sie Ihr zu versteuerndes Einkommen ein</p>
+                </select><br>
+                <p>Angabe versteuerndes Einkommen</p>
                 <div class="split_displayNone">
                     <p>Person1</p>
                     <div class="input-group mb-3">
@@ -36,7 +45,7 @@
                         <input type="text" class="form-control" id="input_p2">
                         <span class="input-group-text">.00</span>
                     </div>
-                    <p> <span id="input_sum"></span></p>
+
                 </div>
 
                 <div class="noSplit_displayNone">
@@ -49,9 +58,11 @@
                 </div>
 
                 <button type="button" class="btn btn-dark" id="button" onclick="calc()">Berechnen</button>
+                <p> <span id="input_sum"></span></p>
                 <div>
                     <p>Berechnung nach <span id=output_basis></span></p>
                 </div>
+
                 <div>
                     <p>Ihre Einkommenssteuer: <span id=output_tax></span></p>
                 </div>

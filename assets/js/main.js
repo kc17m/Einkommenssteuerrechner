@@ -55,7 +55,7 @@ let calc = () => {
 
     if (calc_basis.value == 2) {
         input_num = (Number(input_splitp1.value) + Number(input_splitp2.value)) / 2;
-        input_sum.innerHTML = `Grundlage versteuerbares Einkommen gesamt: ${input_num}€`;
+        input_sum.innerHTML = `Gemitteltes versteuerbares Einkommen: ${input_num}€`;
     }
 
     else {
