@@ -1,0 +1,56 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+fieldset {
+    width: 50%;
+    margin: 2% auto;  
+    font-size: 1rem;  
+    border-radius: 5px;
+    background: lightblue;
+    padding: 2%;
+}
+
+
+select {
+    width: 80%;
+}
+
+input[type=submit] {    
+    width: 40%;
+    margin: 5% auto;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center; 
+    font-size: .9rem; 
+}
+
+
+input[type=number] {
+    border-radius: 5px;
+    padding: 1%;
+    margin: 5% 0 7% 0; 
+    width: 40%;
+    font-size: .9rem;
+}
+
+.split_displayNone {
+    display: none;
+}
+.noSplit_displayNone {
+    display: none;
+}
+
+button {
+    margin: 10% 0;
+}
