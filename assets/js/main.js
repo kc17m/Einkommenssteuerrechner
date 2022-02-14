@@ -31,12 +31,16 @@ console.log(input_sum);
 
 
 
+
+
 let basis = () => {
     console.log("test_onchange");
     if (calc_basis.value == 1) {
         output_basis.innerHTML = `Grundtarif`;
         split_show.classList.add("split_displayNone");
         noSplit_show.classList.remove("noSplit_displayNone");
+        input_sum.style.display = "none";
+
 
 
     }
@@ -44,6 +48,7 @@ let basis = () => {
         output_basis.innerHTML = `Splittingtarif`;
         split_show.classList.remove("split_displayNone");
         noSplit_show.classList.add("noSplit_displayNone");
+
     }
 }
 
@@ -60,6 +65,8 @@ let calc = () => {
 
     else {
         input_num = Number(input.value);
+        input_sum.innerHTML = ` `;
+
     }
     console.log(input_num);
 
