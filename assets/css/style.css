@@ -9,8 +9,8 @@
 
 h1 {
     text-align: center;
+    margin-top: 5%;
 }
-
 
 
 fieldset {
@@ -23,8 +23,6 @@ fieldset {
     padding: 2%;
     word-wrap: break-word;
 }
-
-
 
 
 select {
