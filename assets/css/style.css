@@ -6,6 +6,7 @@
     
 }
 
+
 h1 {
     text-align: center;
 }
@@ -14,12 +15,16 @@ h1 {
 
 fieldset {
     width: 50%;
+    max-width: 800px;
     margin: 2% auto;  
     font-size: 1rem;  
     border-radius: 5px;
     background: lightblue;
     padding: 2%;
+    word-wrap: break-word;
 }
+
+
 
 
 select {
